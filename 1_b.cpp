@@ -54,10 +54,36 @@ class ticket{
                 }
                 return price;
             }
+            //save the details to a file
+    void savetofile(){
+        ofstream file("ticket.txt");
+        file<<endl<<"Ticket details:";
+        file<<"Quantity:"<<quantity<<endl;
+        file<<"Seat no:";
+        for (int i = 0; i < quantity; i++)
+        {
+            file<<seat[i]<<" ";
+        }
+        file<<endl;
+        file<<"Coach:"<<coachNo<<endl;
+        file<<"Date:"<<date<<endl;
+        file<<"Time:"<<time<<endl;
+        file<<"Price:"<<ticketprice()<<endl;
+        file.close();
+
+    }
+    
     
 };
 int main(){
     ticket t;
     t.display();
     cout<<"Total price:"<<t.ticketprice()<<endl;
+    t.savetofile();
+    ifstream file("ticket.txt");
+    string line;
+    while (getline(file,line))
+    {
+        cout<<line<<endl;
+    }
 }
