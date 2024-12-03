@@ -26,3 +26,10 @@ int main() {
     Animal a; // Create an object of class Animal
     return 0; // Objects are destroyed as they go out of scope
 }
+//output:
+// Animal Constructor
+// Tiger Constructor
+// Animal Constructor
+// Animal Destructor
+// Tiger Destructor
+// Animal Destructor
