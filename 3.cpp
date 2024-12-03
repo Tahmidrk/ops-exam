@@ -6,13 +6,13 @@ class Rectangle{
     int length;
     int breadth;
     public:
-    Rectangle(int len,int brth):length(len),breadth(brth){}
+    Rectangle(double len,double brth):length(len),breadth(brth){}
     int getArea(){
         return length*breadth;
     }
 };
 int main(){
-    Rectangle rect(8,6);
+    Rectangle rect(8.9,6.7);
     cout<<"Area="<<rect.getArea();
     return 0;
 }
