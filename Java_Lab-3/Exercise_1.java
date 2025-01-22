@@ -1,3 +1,12 @@
+/*1. Write a Student class with the following:
+a. Instance variables name, age, and grade (all private).
+b. A constructor that takes all three variables as parameters.
+c. Another constructor that takes only name and age, and sets a default grade of &quot;A&quot;.
+d. Another constructor that takes only name and sets default age to 18 and grade to &quot;B&quot;.
+e. In the main method, create three students using all three constructors and display their
+details.
+2. Create a class Person with the following:*/
+
 public class Student {
     private String name;
     private int age;
@@ -35,3 +44,17 @@ public class Student {
         student1.display();
     }
 }
+/*Output:
+Student 1:
+Name: Rakin
+Age: 20
+Grade: A+
+Student 2:
+Name: Rakin
+Age: 20
+Grade: A+
+Student 3:
+Name: Rakin
+Age: 20
+Grade: A+
+*/
