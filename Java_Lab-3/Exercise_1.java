@@ -38,10 +38,10 @@ public class Student {
         student1.display();
 
         System.out.println("Student 2:");
-        student1.display();
+        student2.display();
 
         System.out.println("Student 3:");
-        student1.display();
+        student3.display();
     }
 }
 /*Output:
