@@ -15,6 +15,3 @@ public class Final{
         s2.display();
     }
 }
-/*output:
-Roll Number:145
-Roll Number:131*/
